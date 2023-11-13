@@ -24,15 +24,73 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+img{
+  width: 2000px;
+  height: 800px;
+}
+h5{
+  background-color: #1A1F37;
+  color: aliceblue;
+}
+input::placeholder{
+  color: white !important;
+}
+.navbar-toggler{
+  color: #05B26C !important;
+  background-color: #179069 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex-container {
+  display: flex;
+  justify-content: space-around;
 }
+.flex-item {
+  flex: 1;
+  /*padding: 20px;*/
+  background-color: lightblue ;
+  margin: 5px;
+  width:100% ;
+  height: 100%;
+}
+
+.flex-item2 {
+  flex: 1;
+  /*padding: 20px;*/
+  background-color: rgb(195, 230, 173) ;
+  margin: 5px;
+  width:100% ;
+  height: 100%;
+}
+
+.flex-item3 {
+  flex: 1;
+  /*padding: 20px;*/
+  background-color: rgb(215, 206, 31) ;
+  margin: 5px;
+  width:100% ;
+  height: 100%;
+}
+.flex-item4 {
+  flex: 1;
+  /*padding: 20px;*/
+  background-color: rgb(234, 95, 15) ;
+  margin: 5px;
+  width:100% ;
+  height: 100%;
+}
+
+/*AiOutlineIdcard*/
+/*BiBuildings*/
+/*https://images.unsplash.com/photo-1562422313-5195a5f0198a?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D*/
+/*https://images.unsplash.com/photo-1633259584604-afdc243122ea?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D*/
+/*PiListChecksLight*/
+/*BsTextIndentLeft*/
+/*FaListCheck*/
+/*#179069-sotet zold*/
+/*#05B26C-vilagosabb zold*/
+/*#F5A32E-narancssarga*/
+/*#5EBE86-legvilagosabb zold*/
+/*#109E6A-legsotetebb zold*/
+/*color: #00b26b;-zold asszem*/
+
