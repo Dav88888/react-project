@@ -6,9 +6,9 @@ import {BsGeoAlt } from 'react-icons/bs';
 import {BsListCheck } from 'react-icons/bs';
 import {AiOutlineInfoCircle } from "react-icons/ai";
 import {FaHandshake} from "react-icons/fa";
+import {FaUserGraduate} from "react-icons/fa6";
 import {BiSolidIdCard} from "react-icons/bi";
 import {BiBuildings} from "react-icons/bi";
-import { AiFillAccountBook } from "react-icons/ai";
 import CardBody from 'react-bootstrap/CardBody';
 
 function App() {
@@ -44,40 +44,38 @@ function App() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-
     <div className="flex-container">
     <Row id='elso(egyetlen)sor'>
       <Col sm={6}  id='elsofoszlop'>
         <Row sm={8}  id='masodiksor(A)'>
-          <Col className="flex-item" sm={7} id='masodikoszlop(A)' style={{ width: '25em',height:'25em'}}>
+          <Col className="flex-item" sm={7} id='masodikoszlop(A)' style={{ width: '25em',height:'25em',padding: 0}}>
             <Card  style={{backgroundImage:'url("https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',backgroundSize:'cover', position: 'relative', width: '100%', height: '100%',backgroundColor: '#00b26b',borderRadius: '0',/* marginBottom: '10px',*/}}>
-              <Card.Title style={{backgroundColor:'gray',color:'white',fontWeight:'normal',textAlign:'center', display: 'flex', flexDirection: 'column', alignItems: 'normal', justifyContent: 'space-between' }}>Állások</Card.Title> 
+            <div
+          style={{
+            position: 'absolute', bottom: 0, left: 0, width: '100%', height: '25%',backgroundColor: 'rgba(40, 40, 40, 0.5)',zIndex:'0'}}
+        ></div>
+            <CardBody className="text-center"style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}></CardBody>
+              <Card.Title style={{color:'white',fontWeight:'bold',textAlign:'center',zIndex:'1' }}>Állások</Card.Title> 
             </Card>
           </Col>
-          <Col className="flex-item" sm={2} id='masodikoszlop(B)' style={{ width: '12.5rem',height:'25rem'}}>
+          <Col className="flex-item" sm={2} id='masodikoszlop(B)' style={{ width: '12.5rem',height:'25rem',padding: 0}}>
             <Card  style={{width: '100%', height: '100%', backgroundColor: '#F5A32E',borderRadius: '0', /*marginBottom: '10px'*/}}>
-            <CardBody className="text-center" style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}>
-
-
-           
-            <Card.Img variant="top" as={AiFillAccountBook} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)',fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
-              <Card.Title style={{textAlign:'center' , color:'white',fontWeight:'normal'}}>Diplomásoknak</Card.Title>
-              </CardBody>
+            <CardBody className="text-center"style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}></CardBody>
+            <Card.Img variant="top" as={FaUserGraduate} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)',fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
+              <Card.Title style={{ textAlign: 'center',color:'white',fontWeight:'normal'}}>Diplomásoknak</Card.Title>
               
-              {/* Kártya tartalma */}
             </Card>
           </Col>
         </Row>
       <Row  sm={4} id='masodiksor(B)' >
-        <Col className="flex-item2" sm={7} id='masodikoszlop(AA)' style={{width: '25rem',height: '12.5rem'}}>
-          <Form  inline style={{width: '100%'}}>
+        <Col className="flex-item2" sm={7} id='masodikoszlop(AA)' style={{width: '25rem',height: '12.5rem',padding: 0}}>
+          <Form  inline style={{width: '100%',marginTop:'5px'}}>
             <InputGroup className='bg-transparent' style={{color:'white', borderRadius: '0', borderWidth:'2px',marginBottom: '10px'}}>
                 <InputGroup.Text className='bg-transparent' style={{ borderRight: 'none',borderRadius: '0',borderWidth: '2px',}}>
                     <BsListCheck size={24} color="white"/>
                 </InputGroup.Text>
               <FormControl type="search" color="white" className='bg-transparent' placeholder="Mit keresel" style={{color:'white', borderLeft: 'none',borderRadius: '0',borderWidth:'2px' }} />
             </InputGroup>
-          
             <InputGroup className='bg-transparent' style={{width: '100%',color:'white', borderRadius: '0', borderWidth:'2px'}}>
                 <InputGroup.Text className='bg-transparent' style={{ borderRight: 'none',borderRadius: '0',borderWidth: '2px', }}>
                     <BsGeoAlt  size={24} color="white"/>
@@ -88,63 +86,49 @@ function App() {
           </Form>
         </Col>
           <Col className="flex-item2" sm={2} id='masodikoszlop(BB)' style={{ width: '12.5rem',height:'12.5rem'}}>
-            <Card  className='bg-transparent' style={{width:'100%',height:'100%', backgroundColor: '#F5A32E',borderRadius: '0', /*marginRight: '10px'*/}}>
-              {/* Kártya tartalma */}
+            <Card  className='bg-transparent' style={{width:'100%',height:'100%',borderRadius: '0',marginTop:'5px' /*marginRight: '10px'*/}}>
           <img style={{ width: '100%',height:'100%'}} alt="" src="https://images.unsplash.com/photo-1571365689578-618663443bd7?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
-
             </Card>
           </Col>
       </Row>      
       </Col>
-
       <Col sm={6} id='masodikfoszlop'>
         <Row sm={8} id='masodiksor(a)'>
-          <Col className="flex-item3" sm={7} id='masodikoszlop(a)' style={{ width: '25rem',height:'25rem'}}>
-            <Card style={{width: '100%', height: '50%',backgroundColor: '#5EBE86',borderRadius: '0', /*marginBottom: '5px'*/}}>
-            <CardBody style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}>
-
-            
+          <Col className="flex-item3" sm={7} id='masodikoszlop(a)' style={{ width: '25rem',height:'25rem',padding: 0}}>
+            <Card style={{width: '99%', height: '49%',backgroundColor: '#5EBE86',borderRadius: '0', marginBottom: '10px'}}>
+            <CardBody style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between'  }}></CardBody>
               <Card.Title  style={{color:'white',textAlign:'center',fontWeight:'normal'}}> Munkavállalóknak</Card.Title>
-                {/* Kártya tartalma */}
-                </CardBody>
+                
               </Card>
-            <Card  style={{width: '100%', height: '50%',backgroundColor: '#00b26b',borderRadius: '0',/* margin: '5px'*/}}>
+            <Card  style={{width: '99%', height: '49%',backgroundColor: '#00b26b',borderRadius: '0',marginBottom: '5px', }}>
               <CardBody>
               <Card.Title  style={{color:'white',fontWeight:'normal'}}>Rólunk</Card.Title>
               </CardBody>
-                {/* Kártya tartalma */}
             </Card>
           </Col>
-          <Col className="flex-item3" sm={2} id='masodikoszlop(b)' style={{ width: '12.5rem',height:'25rem'}}>
-            <Card  style={{width: '100%', height: '100%', backgroundColor: '#00b26b',borderRadius: '0', /*margin: '5px'*/}}>
-            <img alt="" style={{ width: '100%',height:'100%',zIndex:'0'}} src="https://plus.unsplash.com/premium_photo-1661769159995-f3af0089875f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
-
-              {/* Kártya tartalma */}
+          <Col className="flex-item3" sm={2} id='masodikoszlop(b)' style={{ width: '12.5rem',height:'25rem',padding: 0}}>
+            <Card className='bg-transparent'  style={{width: '100%', height: '100%',borderRadius: '0', /*margin: '5px'*/}}>
+            <img alt="" style={{ width: '100%',height:'100%',zIndex:'0'}} src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
             </Card>
           </Col>
         </Row>
         <Row sm={4}id='masodiksor(b)' style={{textAlign:'center',height:'12.5rem'}} >
-          <Col className='flex-item4' style={{width: '37.5rem',}}>
+          <Col className='flex-item4' style={{width: '37.5rem',padding: 0}}>
             <CardGroup  style={{ display: 'flex', justifyContent: 'end', height:'100%'}}>
-              <Card style={{ width: '100%',height:'100%', backgroundColor: '#5EBE86',borderRadius: '0', marginRight: '5px'}}>
+              <Card style={{ width: '100%',height:'100%', backgroundColor: '#5EBE86',borderRadius: '0', marginRight: '5px',marginTop:'5px'}}>
                 <CardBody style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}></CardBody>
                 <Card.Img variant="top" as={FaHandshake} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)', fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
                 <Card.Title  style={{color:'white',fontWeight:'normal'}}>Cégeknek</Card.Title>
-                
-                {/* Kártya tartalma */}
               </Card>
-              <Card style={{ width: '100%',height:'100%', backgroundColor: '#00b26b',borderRadius: '0',marginLeft: '5px',marginRight: '5px'}}>
+              <Card style={{ width: '100%',height:'100%', backgroundColor: '#00b26b',borderRadius: '0',marginLeft: '5px',marginRight: '5px',marginTop:'5px'}}>
                   <CardBody style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}></CardBody>
                 <Card.Img variant="top" as={BiBuildings} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)', fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
                   <Card.Title style={{color:'white',fontWeight:'normal'}}>Irodáink</Card.Title>
-                  {/* Kártya tartalma */}
               </Card>
-              <Card style={{width: '100%',height:'100%', backgroundColor: '#00b26b',borderRadius: '0', marginLeft: '5px'}}>
+              <Card style={{width: '100%',height:'100%', backgroundColor: '#00b26b',borderRadius: '0', marginLeft: '5px',marginTop:'5px'}}>
                 <CardBody style={{float:'left', display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}></CardBody>
                 <Card.Img variant="top" as={BiSolidIdCard} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)', fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
-                
                 <Card.Title style={{color:'white',fontWeight:'normal'}}>CV-generátor</Card.Title>
-                {/* Kártya tartalma */}
               </Card>
             </CardGroup>
           </Col>
