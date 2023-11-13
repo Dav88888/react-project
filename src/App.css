@@ -84,6 +84,24 @@ input::placeholder{
   .hide-on-small-screen {
     display: none !important; /* A hide-on-small-screen osztályú elemeket elrejtjük */
   }
+  .flex-item{
+    width: 50% !important;
+  }
+  .flex-item2{
+    width: 50% !important;
+  }
+  .flex-item3{
+    width: 50% !important;
+  }
+  .flex-item4{
+    width: 70% !important;
+  }
+  .flex1{
+    height: 50% !important;
+  }
+  .flex2{
+    height: 50% !important;
+  }
 }
 /*MdOutlineLocationCity /md irodaink*/
 /*ImProfile /im CV*/
