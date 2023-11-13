@@ -90,8 +90,8 @@ function App() {
             <Button variant="outline-success" style={{fontWeight: 'bold',width: '150px',color:'white', borderRadius: '0', borderWidth:'0px',backgroundColor:'#00b26b',marginTop: '10px', }}>Keresés</Button>
           </Form>
         </Col>
-          <Col className="flex-item2" sm={2} id='masodikoszlop(BB)' style={{ width: '12.5rem',height:'12.5rem'}}>
-            <Card  className='bg-transparent' style={{width:'100%',height:'100%',borderRadius: '0',marginTop:'5px' /*marginRight: '10px'*/}}>
+          <Col className="flex-item(2)" sm={2} id='masodikoszlop(BB)' style={{ width: '12.5rem',height:'12.5rem'}}>
+            <Card  className='bg-transparent' style={{width:'100%',height:'100%',borderRadius: '0', marginTop:'5px', marginBottom: '5px'}}>
           <img style={{ width: '100%',height:'100%'}} alt="workinggirl" src="https://images.unsplash.com/photo-1571365689578-618663443bd7?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
             </Card>
           </Col>
@@ -112,8 +112,8 @@ function App() {
             </Card>
           </Col>
           <Col className="flex-item3" sm={2} id='masodikoszlop(b)' style={{ width: '12.5rem',height:'25rem',padding: 0}}>
-            <Card className='bg-transparent-flex2'  style={{width: '100%', height: '100%',borderRadius: '0', /*margin: '5px'*/}}>
-            <img alt="groupwork" style={{ width: '100%',height:'100%',zIndex:'0'}} src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+            <Card className='bg-transparent-flex2'  style={{width: '100%', height: '100%',borderRadius: '0',border:'0px' /*margin: '5px'*/}}>
+            <img alt="groupwork" style={{ width: '100%',height:'100%',zIndex:'0',}} src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
             </Card>
           </Col>
         </Row>

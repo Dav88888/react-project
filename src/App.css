@@ -103,6 +103,26 @@ input::placeholder{
     height: 50% !important;
   }
 }
+/*@media (max-width: 1200px) {
+  .flex-item{
+    width: 80% !important;
+  }
+  .flex-item2{
+    width: 80% !important;
+  }
+  .flex-item3{
+    width: 80% !important;
+  }
+  .flex-item4{
+    width: 90% !important;
+  }
+  .flex1{
+    height: 80% !important;
+  }
+  .flex2{
+    /*height: 80% !important;
+  }
+}*/
 /*MdOutlineLocationCity /md irodaink*/
 /*ImProfile /im CV*/
 /*AiOutlineIdcard*/
