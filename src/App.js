@@ -1,8 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import { Card, Container, CardGroup, Form, FormControl,Button, Row, Col, CardImg } from 'react-bootstrap';
-import { NavDropdown, Nav, Navbar } from 'react-bootstrap';
+import { Card, Container, CardGroup, Form, FormControl,Button, Row, Col, Navbar, Nav } from 'react-bootstrap';
 import InputGroup from 'react-bootstrap/InputGroup';
 import {BsGeoAlt } from 'react-icons/bs';
 import {BsListCheck } from 'react-icons/bs';
@@ -12,7 +10,6 @@ import {BiSolidIdCard} from "react-icons/bi";
 import {BiBuildings} from "react-icons/bi";
 import { AiFillAccountBook } from "react-icons/ai";
 import CardBody from 'react-bootstrap/CardBody';
-import { IconName } from "react-icons/ai";
 
 function App() {
   return (
@@ -20,29 +17,29 @@ function App() {
         <Navbar expand="lg" className="bg-transparent">
       <Container>
         <Navbar.Brand href="#home">
-          <img src="https://hsa.hu/wp-content/uploads/2021/02/HSA_logo-e1596540553919.png" style={{width:'150px',height:'56px',marginBottom: '20px',marginTop: '20px',marginRight: '20px'}}/>
+          <img alt="" src="https://hsa.hu/wp-content/uploads/2021/02/HSA_logo-e1596540553919.png" style={{width:'150px',height:'56px',marginBottom: '20px',marginTop: '20px',marginRight: '20px'}}/>
           </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse id="basic-navbar-nav" >
           <Nav className="me-auto" >
-            <Nav.Link href="#home" style={{ color: 'white',}}>Állások</Nav.Link>
-            <Nav.Link style={{ color: 'white' }}>|</Nav.Link>
-            <Nav.Link href="#link" style={{ color: 'white' }}>Munkavállalóknak</Nav.Link>
-            <Nav.Link style={{ color: 'white' }}>|</Nav.Link>
-            <Nav.Link href="#link" style={{ color: 'white' }}>Rólunk</Nav.Link>
-            <Nav.Link style={{ color: 'white' }}>|</Nav.Link>
-            <Nav.Link href="#link" style={{ color: 'white' }}>Cégeknek</Nav.Link>
-            <Nav.Link style={{ color: 'white' }}>|</Nav.Link>
-            <Nav.Link href="#link" style={{ color: 'white' }}>Irodáink</Nav.Link>
-            <Nav.Link style={{ color: 'white' }}>|</Nav.Link>
-            <Nav.Link href="#link" style={{ color: 'white' }}>CV-generátor</Nav.Link>
-            <Nav.Link style={{ color: 'white' }}>|</Nav.Link>
-            <Nav.Link href="#link" style={{ color: 'white' }}>Kapcsolat</Nav.Link>
+            <Nav.Link href="#allasok" style={{ color: 'white',}}>Állások</Nav.Link>
+            <Nav.Link  className="hide-on-small-screen" style={{ color: 'white' }}>|</Nav.Link>
+            <Nav.Link href="#munkavallaloknak" style={{ color: 'white' }}>Munkavállalóknak</Nav.Link>
+            <Nav.Link  className="hide-on-small-screen" style={{ color: 'white' }}>|</Nav.Link>
+            <Nav.Link href="#rolunk" style={{ color: 'white' }}>Rólunk</Nav.Link>
+            <Nav.Link  className="hide-on-small-screen" style={{ color: 'white' }}>|</Nav.Link>
+            <Nav.Link href="#cegeknek" style={{ color: 'white' }}>Cégeknek</Nav.Link>
+            <Nav.Link  className="hide-on-small-screen" style={{ color: 'white' }}>|</Nav.Link>
+            <Nav.Link href="#irodaink" style={{ color: 'white' }}>Irodáink</Nav.Link>
+            <Nav.Link  className="hide-on-small-screen" style={{ color: 'white' }}>|</Nav.Link>
+            <Nav.Link href="#cvgenerator" style={{ color: 'white' }}>CV-generátor</Nav.Link>
+            <Nav.Link  className="hide-on-small-screen" style={{ color: 'white' }}>|</Nav.Link>
+            <Nav.Link href="#kapcsolat" style={{ color: 'white' }}>Kapcsolat</Nav.Link>
           </Nav>
           <Nav style={{textAlign:'right'}}>
-          <Nav.Link href="#link" style={{ color: 'white',textAlign:'right' }}><strong>HU</strong></Nav.Link>
-            <Nav.Link style={{ color: 'white',textAlign:'right' }}>|</Nav.Link> 
-            <Nav.Link href="#link" style={{ color: 'white', textAlign:'right'}}>EN</Nav.Link>
+          <Nav.Link href="#HU" style={{ color: 'white',textAlign:'right' }}><strong>HU</strong></Nav.Link>
+            <Nav.Link  className="hide-on-small-screen" style={{ color: 'white',textAlign:'right' }}>|</Nav.Link> 
+            <Nav.Link href="#EN" style={{ color: 'white', textAlign:'right'}}>EN</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -53,14 +50,8 @@ function App() {
       <Col sm={6}  id='elsofoszlop'>
         <Row sm={8}  id='masodiksor(A)'>
           <Col className="flex-item" sm={7} id='masodikoszlop(A)' style={{ width: '25em',height:'25em'}}>
-            <Card  style={{ width: '100%', height: '100%',backgroundColor: '#00b26b',borderRadius: '0',/* marginBottom: '10px',*/}}>
-            <CardBody style={{width:'100%',height:'100%'}}>
-              <img style={{ width: '100%',height:'100%',zIndex:'0'}} src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
-              <Card.Title style={{color:'white',fontWeight:'normal',zIndex:'1'}}>Állások</Card.Title> 
-
-
-            </CardBody>
-                   
+            <Card  style={{backgroundImage:'url("https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',backgroundSize:'cover', position: 'relative', width: '100%', height: '100%',backgroundColor: '#00b26b',borderRadius: '0',/* marginBottom: '10px',*/}}>
+              <Card.Title style={{backgroundColor:'gray',color:'white',fontWeight:'normal',textAlign:'center', display: 'flex', flexDirection: 'column', alignItems: 'normal', justifyContent: 'space-between' }}>Állások</Card.Title> 
             </Card>
           </Col>
           <Col className="flex-item" sm={2} id='masodikoszlop(B)' style={{ width: '12.5rem',height:'25rem'}}>
@@ -99,7 +90,7 @@ function App() {
           <Col className="flex-item2" sm={2} id='masodikoszlop(BB)' style={{ width: '12.5rem',height:'12.5rem'}}>
             <Card  className='bg-transparent' style={{width:'100%',height:'100%', backgroundColor: '#F5A32E',borderRadius: '0', /*marginRight: '10px'*/}}>
               {/* Kártya tartalma */}
-          <img style={{ width: '100%',height:'100%'}} src="https://images.unsplash.com/photo-1571365689578-618663443bd7?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+          <img style={{ width: '100%',height:'100%'}} alt="" src="https://images.unsplash.com/photo-1571365689578-618663443bd7?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
 
             </Card>
           </Col>
@@ -126,7 +117,7 @@ function App() {
           </Col>
           <Col className="flex-item3" sm={2} id='masodikoszlop(b)' style={{ width: '12.5rem',height:'25rem'}}>
             <Card  style={{width: '100%', height: '100%', backgroundColor: '#00b26b',borderRadius: '0', /*margin: '5px'*/}}>
-            <img style={{ width: '100%',height:'100%',zIndex:'0'}} src="https://plus.unsplash.com/premium_photo-1661769159995-f3af0089875f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+            <img alt="" style={{ width: '100%',height:'100%',zIndex:'0'}} src="https://plus.unsplash.com/premium_photo-1661769159995-f3af0089875f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
 
               {/* Kártya tartalma */}
             </Card>
@@ -165,9 +156,9 @@ function App() {
       <Navbar bg="dark" variant="dark" expand="lg" className="bg-transparent" >
         <Nav className="w-100 justify-content-end" style={{backgroundcolor: '#1A1F37'}}> 
           <Nav.Link href="#home" style={{ color: 'white' }}>© 2022 HSA Kft.  <AiOutlineInfoCircle size={24} style={{margin: '5px'}}/> </Nav.Link>
-          <Nav.Link >|</Nav.Link>
+          <Nav.Link className="hide-on-small-screen" >|</Nav.Link>
           <Nav.Link href="#about" style={{ color: 'white' }}>DES&DEV: <strong>OUTCLASS™</strong></Nav.Link>
-          <Nav.Link >|</Nav.Link>
+          <Nav.Link className="hide-on-small-screen"  >|</Nav.Link>
           <Nav.Link href="#contact" style={{ color: 'white' }}>Adatvédelmi tájékoztató</Nav.Link>
         </Nav>
       </Navbar>
