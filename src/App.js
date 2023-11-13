@@ -11,9 +11,14 @@ import {BiSolidIdCard} from "react-icons/bi";
 import {BiBuildings} from "react-icons/bi";
 import CardBody from 'react-bootstrap/CardBody';
 
+  
+
 function App() {
+  const handleClick = () => {
+    alert('A kártyára kattintottak!');
+  };
   return (
-    <Container fluid style={{ backgroundImage: `url('https://images.unsplash.com/photo-1483401757487-2ced3fa77952?q=80&w=1773&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`, backgroundSize: 'contain',/*cover, auto, contain*/  backgroundPosition: 'center', }}>
+    <Container fluid style={{ backgroundImage: `url('https://images.unsplash.com/photo-1589859762194-eaae75c61f64?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`, backgroundSize: 'cover',/*cover, auto, contain*/  backgroundPosition: 'center', }}>
         <Navbar expand="lg" className="bg-transparent">
       <Container>
         <Navbar.Brand href="#home">
@@ -87,7 +92,7 @@ function App() {
         </Col>
           <Col className="flex-item2" sm={2} id='masodikoszlop(BB)' style={{ width: '12.5rem',height:'12.5rem'}}>
             <Card  className='bg-transparent' style={{width:'100%',height:'100%',borderRadius: '0',marginTop:'5px' /*marginRight: '10px'*/}}>
-          <img style={{ width: '100%',height:'100%'}} alt="" src="https://images.unsplash.com/photo-1571365689578-618663443bd7?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+          <img style={{ width: '100%',height:'100%'}} alt="workinggirl" src="https://images.unsplash.com/photo-1571365689578-618663443bd7?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
             </Card>
           </Col>
       </Row>      
@@ -100,22 +105,22 @@ function App() {
               <Card.Title  style={{color:'white',textAlign:'center',fontWeight:'normal'}}> Munkavállalóknak</Card.Title>
                 
               </Card>
-            <Card  style={{width: '99%', height: '49%',backgroundColor: '#00b26b',borderRadius: '0',marginBottom: '5px', }}>
+            <Card  style={{width: '99%', height: '49%',backgroundColor: '#109E6A',borderRadius: '0',marginBottom: '5px', }}>
               <CardBody>
-              <Card.Title  style={{color:'white',fontWeight:'normal'}}>Rólunk</Card.Title>
+              <Card.Title  style={{position:'absolute',top:'30px',left:'40px',color:'white',fontWeight:'normal'}}>Rólunk</Card.Title>
               </CardBody>
             </Card>
           </Col>
           <Col className="flex-item3" sm={2} id='masodikoszlop(b)' style={{ width: '12.5rem',height:'25rem',padding: 0}}>
             <Card className='bg-transparent'  style={{width: '100%', height: '100%',borderRadius: '0', /*margin: '5px'*/}}>
-            <img alt="" style={{ width: '100%',height:'100%',zIndex:'0'}} src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+            <img alt="groupwork" style={{ width: '100%',height:'100%',zIndex:'0'}} src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
             </Card>
           </Col>
         </Row>
         <Row sm={4}id='masodiksor(b)' style={{textAlign:'center',height:'12.5rem'}} >
           <Col className='flex-item4' style={{width: '37.5rem',padding: 0}}>
             <CardGroup  style={{ display: 'flex', justifyContent: 'end', height:'100%'}}>
-              <Card style={{ width: '100%',height:'100%', backgroundColor: '#5EBE86',borderRadius: '0', marginRight: '5px',marginTop:'5px'}}>
+              <Card onClick={handleClick} style={{ width: '100%',height:'100%', backgroundColor: '#5EBE86',borderRadius: '0', marginRight: '5px',marginTop:'5px'}}>
                 <CardBody style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}></CardBody>
                 <Card.Img variant="top" as={FaHandshake} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)', fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
                 <Card.Title  style={{color:'white',fontWeight:'normal'}}>Cégeknek</Card.Title>
@@ -125,7 +130,7 @@ function App() {
                 <Card.Img variant="top" as={BiBuildings} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)', fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
                   <Card.Title style={{color:'white',fontWeight:'normal'}}>Irodáink</Card.Title>
               </Card>
-              <Card style={{width: '100%',height:'100%', backgroundColor: '#00b26b',borderRadius: '0', marginLeft: '5px',marginTop:'5px'}}>
+              <Card style={{width: '100%',height:'100%', backgroundColor: '#109E6A',borderRadius: '0', marginLeft: '5px',marginTop:'5px'}}>
                 <CardBody style={{float:'left', display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}></CardBody>
                 <Card.Img variant="top" as={BiSolidIdCard} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)', fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
                 <Card.Title style={{color:'white',fontWeight:'normal'}}>CV-generátor</Card.Title>
