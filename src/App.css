@@ -105,6 +105,13 @@ input::placeholder{
   .flex3{
     height: 90% !important;
   }
+
+  .img{
+    font-size: 60px !important;
+  }
+  .cardtitle{
+    font-size: 20px !important;
+  }
 }
 /*@media (max-width: 1200px) {
   .flex-item{

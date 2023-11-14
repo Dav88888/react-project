@@ -26,7 +26,7 @@ function App() {
           </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse id="basic-navbar-nav" >
-          <Nav className="me-auto" >
+          <Nav className="mx-auto" >
             <Nav.Link href="#allasok" style={{ color: 'white',}}>Állások</Nav.Link>
             <Nav.Link  className="hide-on-small-screen" style={{ color: 'white' }}>|</Nav.Link>
             <Nav.Link href="#munkavallaloknak" style={{ color: 'white' }}>Munkavállalóknak</Nav.Link>
@@ -60,14 +60,14 @@ function App() {
             position: 'absolute', bottom: 0, left: 0, width: '100%', height: '25%',backgroundColor: 'rgba(40, 40, 40, 0.5)',zIndex:'0'}}
         ></div>
             <CardBody className="text-center"style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}></CardBody>
-              <Card.Title style={{color:'white',fontWeight:'bold',textAlign:'center',zIndex:'1' }}>Állások</Card.Title> 
+              <Card.Title className='cardtitle' style={{color:'white',fontWeight:'bold',textAlign:'center',zIndex:'1' }}>Állások</Card.Title> 
             </Card>
           </Col>
           <Col className="flex-item" sm={2} id='masodikoszlop(B)' style={{ width: '12.5rem',height:'25rem',padding: 0}}>
             <Card  className='flex1' style={{width: '100%', height: '100%', backgroundColor: '#F5A32E',borderRadius: '0', /*marginBottom: '10px'*/}}>
             <CardBody className="text-center"style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}></CardBody>
-            <Card.Img variant="top" as={FaUserGraduate} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)',fontSize:'6.51vw',display: 'grid',placeItems: 'center',color:'white'}} />
-              <Card.Title style={{ textAlign: 'center',color:'white',fontWeight:'normal'}}>Diplomásoknak</Card.Title>
+            <Card.Img className='img' variant="top" as={FaUserGraduate} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)',fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
+              <Card.Title  className='cardtitle' style={{ textAlign: 'center',color:'white',fontWeight:'normal'}}>Diplomásoknak</Card.Title>
               
             </Card>
           </Col>
@@ -102,12 +102,12 @@ function App() {
           <Col className="flex-item3" sm={7} id='masodikoszlop(a)' style={{ width: '25rem',height:'25rem',padding: 0}}>
             <Card style={{width: '99%', height: '49%',backgroundColor: '#5EBE86',borderRadius: '0', marginBottom: '10px'}}>
             <CardBody style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between'  }}></CardBody>
-              <Card.Title  style={{color:'white',textAlign:'center',fontWeight:'normal'}}> Munkavállalóknak</Card.Title>
+              <Card.Title className='cardtitle' style={{color:'white',textAlign:'center',fontWeight:'normal'}}> Munkavállalóknak</Card.Title>
                 
               </Card>
             <Card  style={{width: '99%', height: '49%',backgroundColor: '#109E6A',borderRadius: '0',marginBottom: '5px', }}>
               <CardBody>
-              <Card.Title  style={{position:'absolute',top:'30px',left:'40px',color:'white',fontWeight:'normal'}}>Rólunk</Card.Title>
+              <Card.Title className='cardtitle' style={{position:'absolute',top:'30px',left:'40px',color:'white',fontWeight:'normal'}}>Rólunk</Card.Title>
               </CardBody>
             </Card>
           </Col>
@@ -122,18 +122,18 @@ function App() {
             <CardGroup  style={{ display: 'flex', justifyContent: 'end', height:'100%'}}>
               <Card onClick={handleClick} style={{ width: '100%',height:'100%', backgroundColor: '#5EBE86',borderRadius: '0', marginRight: '5px',marginTop:'5px'}}>
                 <CardBody style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}></CardBody>
-                <Card.Img variant="top" as={FaHandshake} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)', fontSize:'6.51vw',display: 'grid',placeItems: 'center',color:'white'}} />
-                <Card.Title  style={{color:'white',fontWeight:'normal'}}>Cégeknek</Card.Title>
+                <Card.Img className='img' variant="top" as={FaHandshake} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)', fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
+                <Card.Title className='cardtitle' style={{color:'white',fontWeight:'normal'}}>Cégeknek</Card.Title>
               </Card>
               <Card style={{ width: '100%',height:'100%', backgroundColor: '#00b26b',borderRadius: '0',marginLeft: '5px',marginRight: '5px',marginTop:'5px'}}>
                   <CardBody style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}></CardBody>
-                <Card.Img variant="top" as={BiBuildings} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)', fontSize:'6.51vw',display: 'grid',placeItems: 'center',color:'white'}} />
-                  <Card.Title style={{color:'white',fontWeight:'normal'}}>Irodáink</Card.Title>
+                <Card.Img className='img' variant="top" as={BiBuildings} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)', fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
+                  <Card.Title className='cardtitle' style={{color:'white',fontWeight:'normal'}}>Irodáink</Card.Title>
               </Card>
               <Card style={{width: '100%',height:'100%', backgroundColor: '#109E6A',borderRadius: '0', marginLeft: '5px',marginTop:'5px'}}>
                 <CardBody style={{float:'left', display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}></CardBody>
-                <Card.Img variant="top" as={BiSolidIdCard} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)', fontSize:'6.51vw',display: 'grid',placeItems: 'center',color:'white'}} />
-                <Card.Title style={{color:'white',fontWeight:'normal'}}>CV-generátor</Card.Title>
+                <Card.Img className='img' variant="top" as={BiSolidIdCard} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)', fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
+                <Card.Title className='cardtitle' style={{color:'white',fontWeight:'normal'}}>CV-generátor</Card.Title>
               </Card>
             </CardGroup>
           </Col>
