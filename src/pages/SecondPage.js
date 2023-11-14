@@ -46,9 +46,9 @@ const SecondPage = () => {
               </Navbar.Collapse>
             </Container>
           </Navbar>
-          <div className="flex-container">
-          <Row id='elso(egyetlen)sor'>
-            <Col sm={6}  id='elsofoszlop'>
+      <div className="flex-container">
+        <Row id='elso(egyetlen)sor' style={{ width: '100%',height:'100%'}}>
+            <Col sm={4}  id='elsofoszlop' style={{padding: 0}}>
                 <Col className="flex-item" sm={7} id='masodikoszlop(A)' style={{ width: '25em',height:'25em',padding: 0}}>
                   <Card  style={{backgroundImage:'url("https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',backgroundSize:'cover', position: 'relative', width: '100%', height: '100%',backgroundColor: '#00b26b',borderRadius: '0',/* marginBottom: '10px',*/}}>
                   <div
@@ -58,8 +58,7 @@ const SecondPage = () => {
                   <CardBody className="text-center"style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}></CardBody>
                     <Card.Title className='cardtitle' style={{color:'white',fontWeight:'bold',textAlign:'center',zIndex:'1' }}>Állások</Card.Title> 
                   </Card>
-                </Col>
-                
+                </Col> 
               <Col className="flex-item2" sm={7} id='masodikoszlop(AA)' style={{width: '25rem',height: '12.5rem',padding: 0}}>
                 <Form  inline style={{width: '100%',marginTop:'5px'}}>
                   <InputGroup className='bg-transparent' style={{color:'white', borderRadius: '0', borderWidth:'2px',marginBottom: '10px'}}>
@@ -76,40 +75,39 @@ const SecondPage = () => {
                   </InputGroup>
                   <Button variant="outline-success" style={{fontWeight: 'bold',width: '150px',color:'white', borderRadius: '0', borderWidth:'0px',backgroundColor:'#00b26b',marginTop: '10px', }}>Keresés</Button>
                 </Form>
-              </Col>
-                
+              </Col> 
             </Col>
-            <Card style={{ width: '100%',height:'100%', backgroundColor: '#00b26b',borderRadius: '0',marginLeft: '5px',marginRight: '5px',marginTop:'5px'}}>
-                        <CardBody style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}></CardBody>
-                      <Card.Img className='img' variant="top" as={BiBuildings} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)', fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
-                        <Card.Title className='cardtitle' style={{color:'white',fontWeight:'normal'}}>Irodáink</Card.Title>
-                    </Card>
-            <Col sm={6} id='masodikfoszlop'>
-              <Row sm={8} id='masodiksor(a)' style={{marginBottom:'1px',marginTop:'1px'}}>
-                
-                <Col className="flex-item3 flex2" sm={2} id='masodikoszlop(b)' style={{ width: '12.5rem',height:'25rem',padding: 0}}>
+
+            <Col sm={6}  id='masodikfoszlop' style={{padding: 0}}>
+              <Col style={{ width: '100%',height:'100%'}}>
+                <Card style={{ width: '100%',height:'100%', backgroundColor: '#00b26b',borderRadius: '0',/*marginLeft: '5px',marginRight: '5px',marginTop:'5px'*/}}>
+                      <CardBody style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}>
+                      <Card.Img className='img' variant="top" as={BiBuildings} style={{position: 'absolute', top: '10%', left: '10%',  transform: 'translate(-50%, -50%)', fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
+                      <Card.Title className='cardtitle' style={{position: 'absolute', top: '10%', left: '22%',  transform: 'translate(-50%, -50%)', color:'white',fontWeight:'bold'}}>Irodáink</Card.Title>
+                      </CardBody>
+                </Card>
+              </Col>
+            </Col>
+            
+            <Col sm={2} id='harmadikdikfoszlop' style={{padding: 0}}>
+                <Col className="flex-item3" sm={2} id='masodikoszlop(b)' style={{ width: '100%',height:'25rem',padding: 0}}>
                   <Card className='bg-transparent'  style={{width: '100%', height: '100%',borderRadius: '0',border:'0px' /*margin: '5px'*/}}>
                   <img alt="groupwork" style={{ width: '100%',height:'100%',zIndex:'0',}} src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
                   </Card>
                 </Col>
-              </Row>
-              <Row sm={4} id='masodiksor(b)' style={{textAlign:'center',height:'12.5rem',marginBottom:'1px',marginTop:'1px'}} >
-                <Col className='flex-item4' style={{width: '37.5rem',padding: 0}}>
+                <Col className='flex-item4' style={{width: '100%',height:'12.5rem',padding: 0,textAlign:'center'}}>
                   <CardGroup  style={{ display: 'flex', justifyContent: 'end', height:'100%'}}>
-                    
-                    
-                    
-                    <Card style={{width: '100%',height:'100%', backgroundColor: '#109E6A',borderRadius: '0', marginLeft: '5px',marginTop:'5px'}}>
+                    <Card style={{width: '100%',height:'100%', backgroundColor: '#109E6A',borderRadius: '0', /*marginLeft: '5px',marginTop:'5px'*/}}>
                       <CardBody style={{float:'left', display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}></CardBody>
                       <Card.Img className='img' variant="top" as={BiSolidIdCard} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)', fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
                       <Card.Title className='cardtitle' style={{color:'white',fontWeight:'normal'}}>CV-generátor</Card.Title>
                     </Card>
                   </CardGroup>
                 </Col>
-              </Row>      
             </Col>
-          </Row>
-          </div>
+       </Row>
+       </div>
+          
           <footer>
             <Navbar bg="dark" variant="dark" expand="lg" className="bg-transparent" >
               <Nav className="w-100 justify-content-end" style={{backgroundcolor: '#1A1F37'}}> 
@@ -121,7 +119,8 @@ const SecondPage = () => {
               </Nav>
             </Navbar>
           </footer>
-          </Container>
+      
+    </Container>
   );
 }
 
