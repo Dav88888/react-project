@@ -16,7 +16,7 @@ import { Link,} from 'react-router-dom';
 const MainPage = () => {
   
   return (
-    <Container fluid style={{ backgroundImage: `url('https://images.unsplash.com/photo-1589859762194-eaae75c61f64?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`, backgroundSize: 'cover',/*cover, auto, contain*/  backgroundPosition: 'center', }}>
+    <Container fluid style={{ backgroundImage: `url('https://images.unsplash.com/photo-1614279629245-d7a138f035f0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`, backgroundSize: 'cover',/*cover, auto, contain*/  backgroundPosition: 'center', }}>
             <Navbar expand="lg" className="bg-transparent">
             <Container>
               <Navbar.Brand href="#home">
