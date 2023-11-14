@@ -25,7 +25,7 @@ function App() {
           <img alt="" src="https://hsa.hu/wp-content/uploads/2021/02/HSA_logo-e1596540553919.png" style={{width:'150px',height:'56px',marginBottom: '20px',marginTop: '20px',marginRight: '20px'}}/>
           </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-        <Navbar.Collapse id="basic-navbar-nav" >
+        <Navbar.Collapse id="basic-navbar-nav"style={{ margin: 'auto' }} >
           <Nav className="mx-auto" >
             <Nav.Link href="#allasok" style={{ color: 'white',}}>Állások</Nav.Link>
             <Nav.Link  className="hide-on-small-screen" style={{ color: 'white' }}>|</Nav.Link>
@@ -52,7 +52,7 @@ function App() {
     <div className="flex-container">
     <Row id='elso(egyetlen)sor'>
       <Col sm={6}  id='elsofoszlop'>
-        <Row sm={8}  id='masodiksor(A)'>
+        <Row sm={8}  id='masodiksor(A)' style={{marginBottom:'1px',marginTop:'1px'}}>
           <Col className="flex-item" sm={7} id='masodikoszlop(A)' style={{ width: '25em',height:'25em',padding: 0}}>
             <Card  style={{backgroundImage:'url("https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',backgroundSize:'cover', position: 'relative', width: '100%', height: '100%',backgroundColor: '#00b26b',borderRadius: '0',/* marginBottom: '10px',*/}}>
             <div
@@ -72,7 +72,7 @@ function App() {
             </Card>
           </Col>
         </Row>
-      <Row  sm={4} id='masodiksor(B)' >
+      <Row  sm={4} id='masodiksor(B)' style={{marginBottom:'1px',marginTop:'1px'}}>
         <Col className="flex-item2" sm={7} id='masodikoszlop(AA)' style={{width: '25rem',height: '12.5rem',padding: 0}}>
           <Form  inline style={{width: '100%',marginTop:'5px'}}>
             <InputGroup className='bg-transparent' style={{color:'white', borderRadius: '0', borderWidth:'2px',marginBottom: '10px'}}>
@@ -98,7 +98,7 @@ function App() {
       </Row>      
       </Col>
       <Col sm={6} id='masodikfoszlop'>
-        <Row sm={8} id='masodiksor(a)'>
+        <Row sm={8} id='masodiksor(a)' style={{marginBottom:'1px',marginTop:'1px'}}>
           <Col className="flex-item3" sm={7} id='masodikoszlop(a)' style={{ width: '25rem',height:'25rem',padding: 0}}>
             <Card style={{width: '99%', height: '49%',backgroundColor: '#5EBE86',borderRadius: '0', marginBottom: '10px'}}>
             <CardBody style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between'  }}></CardBody>
@@ -117,7 +117,7 @@ function App() {
             </Card>
           </Col>
         </Row>
-        <Row sm={4}id='masodiksor(b)' style={{textAlign:'center',height:'12.5rem'}} >
+        <Row sm={4} id='masodiksor(b)' style={{textAlign:'center',height:'12.5rem',marginBottom:'1px',marginTop:'1px'}} >
           <Col className='flex-item4' style={{width: '37.5rem',padding: 0}}>
             <CardGroup  style={{ display: 'flex', justifyContent: 'end', height:'100%'}}>
               <Card onClick={handleClick} style={{ width: '100%',height:'100%', backgroundColor: '#5EBE86',borderRadius: '0', marginRight: '5px',marginTop:'5px'}}>
