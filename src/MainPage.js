@@ -21,7 +21,7 @@ const MainPage = () => {
             <Navbar expand="lg" className="bg-transparent">
             <Container>
               <Navbar.Brand href="#home">
-                <img alt="" src="https://hsa.hu/wp-content/uploads/2021/02/HSA_logo-e1596540553919.png" style={{width:'150px',height:'56px',marginBottom: '20px',marginTop: '20px',marginRight: '20px'}}/>
+                <img alt="" src="https://hsa.hu/wp-content/uploads/2020/08/HSA_logo_wh-e1596540575453.png" style={{width:'150px',height:'56px',marginBottom: '20px',marginTop: '20px',marginRight: '20px'}}/>
                 </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav"/>
               <Navbar.Collapse id="basic-navbar-nav"style={{ margin: 'auto' }} >

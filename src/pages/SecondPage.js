@@ -10,6 +10,7 @@ import {BiSolidIdCard} from "react-icons/bi";
 import {BiBuildings} from "react-icons/bi";
 import CardBody from 'react-bootstrap/CardBody';
 import { Link,} from 'react-router-dom';
+import { BsFileExcel } from "react-icons/bs";
 
 
 const SecondPage = () => {
@@ -19,7 +20,7 @@ const SecondPage = () => {
             <Navbar expand="lg" className="bg-transparent">
             <Container>
               <Navbar.Brand href="#home">
-                <img alt="" src="https://hsa.hu/wp-content/uploads/2021/02/HSA_logo-e1596540553919.png" style={{width:'150px',height:'56px',marginBottom: '20px',marginTop: '20px',marginRight: '20px'}}/>
+                <img alt="" src="https://hsa.hu/wp-content/uploads/2020/08/HSA_logo_wh-e1596540575453.png" style={{width:'150px',height:'56px',marginBottom: '20px',marginTop: '20px',marginRight: '20px'}}/>
                 </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav"/>
               <Navbar.Collapse id="basic-navbar-nav"style={{ margin: 'auto' }} >
@@ -47,9 +48,9 @@ const SecondPage = () => {
             </Container>
           </Navbar>
       <div className="flex-container">
-        <Row id='elso(egyetlen)sor' style={{ width: '100%',height:'100%'}}>
+        <Row id='elso(egyetlen)sor' style={{ width: '80%',height:'80%'}}>
             <Col sm={4}  id='elsofoszlop' style={{padding: 0}}>
-                <Col className="flex-item" sm={7} id='masodikoszlop(A)' style={{ width: '25em',height:'25em',padding: 0}}>
+                <Col className="flex-item" sm={7} id='masodikoszlop(A)' style={{ width: '100%',height:'25em',padding: 0}}>
                   <Card  style={{backgroundImage:'url("https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',backgroundSize:'cover', position: 'relative', width: '100%', height: '100%',backgroundColor: '#00b26b',borderRadius: '0',/* marginBottom: '10px',*/}}>
                   <div
                 style={{
@@ -83,6 +84,7 @@ const SecondPage = () => {
                 <Card style={{ width: '100%',height:'100%', backgroundColor: '#00b26b',borderRadius: '0',/*marginLeft: '5px',marginRight: '5px',marginTop:'5px'*/}}>
                       <CardBody style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}>
                       <Card.Img className='img' variant="top" as={BiBuildings} style={{position: 'absolute', top: '10%', left: '10%',  transform: 'translate(-50%, -50%)', fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
+                      <Card.Img className='img' variant="top" as={BsFileExcel} style={{position: 'absolute', top: '10%', left: '90%',  transform: 'translate(-50%, -50%)', fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
                       <Card.Title className='cardtitle' style={{position: 'absolute', top: '10%', left: '22%',  transform: 'translate(-50%, -50%)', color:'white',fontWeight:'bold'}}>Irodáink</Card.Title>
                       </CardBody>
                 </Card>
