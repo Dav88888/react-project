@@ -102,6 +102,9 @@ input::placeholder{
   .flex2{
     height: 50% !important;
   }
+  .flex3{
+    height: 90% !important;
+  }
 }
 /*@media (max-width: 1200px) {
   .flex-item{

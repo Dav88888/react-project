@@ -64,9 +64,9 @@ function App() {
             </Card>
           </Col>
           <Col className="flex-item" sm={2} id='masodikoszlop(B)' style={{ width: '12.5rem',height:'25rem',padding: 0}}>
-            <Card className='flex1'  style={{width: '100%', height: '100%', backgroundColor: '#F5A32E',borderRadius: '0', /*marginBottom: '10px'*/}}>
+            <Card  className='flex1' style={{width: '100%', height: '100%', backgroundColor: '#F5A32E',borderRadius: '0', /*marginBottom: '10px'*/}}>
             <CardBody className="text-center"style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}></CardBody>
-            <Card.Img variant="top" as={FaUserGraduate} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)',fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
+            <Card.Img variant="top" as={FaUserGraduate} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)',fontSize:'6.51vw',display: 'grid',placeItems: 'center',color:'white'}} />
               <Card.Title style={{ textAlign: 'center',color:'white',fontWeight:'normal'}}>Diplomásoknak</Card.Title>
               
             </Card>
@@ -111,8 +111,8 @@ function App() {
               </CardBody>
             </Card>
           </Col>
-          <Col className="flex-item3" sm={2} id='masodikoszlop(b)' style={{ width: '12.5rem',height:'25rem',padding: 0}}>
-            <Card className='bg-transparent-flex2'  style={{width: '100%', height: '100%',borderRadius: '0',border:'0px' /*margin: '5px'*/}}>
+          <Col className="flex-item3 flex2" sm={2} id='masodikoszlop(b)' style={{ width: '12.5rem',height:'25rem',padding: 0}}>
+            <Card className='bg-transparent'  style={{width: '100%', height: '100%',borderRadius: '0',border:'0px' /*margin: '5px'*/}}>
             <img alt="groupwork" style={{ width: '100%',height:'100%',zIndex:'0',}} src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
             </Card>
           </Col>
@@ -122,17 +122,17 @@ function App() {
             <CardGroup  style={{ display: 'flex', justifyContent: 'end', height:'100%'}}>
               <Card onClick={handleClick} style={{ width: '100%',height:'100%', backgroundColor: '#5EBE86',borderRadius: '0', marginRight: '5px',marginTop:'5px'}}>
                 <CardBody style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}></CardBody>
-                <Card.Img variant="top" as={FaHandshake} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)', fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
+                <Card.Img variant="top" as={FaHandshake} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)', fontSize:'6.51vw',display: 'grid',placeItems: 'center',color:'white'}} />
                 <Card.Title  style={{color:'white',fontWeight:'normal'}}>Cégeknek</Card.Title>
               </Card>
               <Card style={{ width: '100%',height:'100%', backgroundColor: '#00b26b',borderRadius: '0',marginLeft: '5px',marginRight: '5px',marginTop:'5px'}}>
                   <CardBody style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}></CardBody>
-                <Card.Img variant="top" as={BiBuildings} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)', fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
+                <Card.Img variant="top" as={BiBuildings} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)', fontSize:'6.51vw',display: 'grid',placeItems: 'center',color:'white'}} />
                   <Card.Title style={{color:'white',fontWeight:'normal'}}>Irodáink</Card.Title>
               </Card>
               <Card style={{width: '100%',height:'100%', backgroundColor: '#109E6A',borderRadius: '0', marginLeft: '5px',marginTop:'5px'}}>
                 <CardBody style={{float:'left', display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}></CardBody>
-                <Card.Img variant="top" as={BiSolidIdCard} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)', fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
+                <Card.Img variant="top" as={BiSolidIdCard} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)', fontSize:'6.51vw',display: 'grid',placeItems: 'center',color:'white'}} />
                 <Card.Title style={{color:'white',fontWeight:'normal'}}>CV-generátor</Card.Title>
               </Card>
             </CardGroup>
