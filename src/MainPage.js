@@ -1,4 +1,3 @@
-// MainPage.jsx
 import './App.css';
 import React from 'react';
 import { Card, Container, CardGroup, Form, FormControl,Button, Row, Col, Navbar, Nav } from 'react-bootstrap';
@@ -21,7 +20,7 @@ const MainPage = () => {
             <Navbar expand="lg" className="bg-transparent">
             <Container>
               <Navbar.Brand href="#home">
-                <img alt="" src="https://hsa.hu/wp-content/uploads/2020/08/HSA_logo_wh-e1596540575453.png" style={{width:'150px',height:'56px',marginBottom: '20px',marginTop: '20px',marginRight: '20px'}}/>
+                <img alt="" src="https://hsa.hu/wp-content/uploads/2020/08/HSA_logo_wh-e1596540575453.png" style={{width:'150px',height:'56px',marginBottom: '1.25rem',marginTop: '1.25rem',marginLeft: '30%',marginRight:'0px'}}/>
                 </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav"/>
               <Navbar.Collapse id="basic-navbar-nav"style={{ margin: 'auto' }} >
@@ -112,7 +111,7 @@ const MainPage = () => {
                 </Col>
                 <Col className="flex-item3 flex2" sm={2} id='masodikoszlop(b)' style={{ width: '12.5rem',height:'25rem',padding: 0}}>
                   <Card className='bg-transparent'  style={{width: '100%', height: '100%',borderRadius: '0',border:'0px' /*margin: '5px'*/}}>
-                  <img alt="groupwork" style={{ width: '100%',height:'100%',zIndex:'0',}} src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                  <img alt="groupwork" style={{ width: '100%',height:'100%',}} src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
                   </Card>
                 </Col>
               </Row>

@@ -1,7 +1,7 @@
 // SecondPage.jsx
 import '../App.css';
 import React from 'react';
-import { Card, Container, CardGroup, Form, FormControl,Button, Row, Col, Navbar, Nav } from 'react-bootstrap';
+import { Card, Container, Form, FormControl,Button, Row, Col, Navbar, Nav } from 'react-bootstrap';
 import InputGroup from 'react-bootstrap/InputGroup';
 import {BsGeoAlt } from 'react-icons/bs';
 import {BsListCheck } from 'react-icons/bs';
@@ -10,7 +10,7 @@ import {BiSolidIdCard} from "react-icons/bi";
 import {BiBuildings} from "react-icons/bi";
 import CardBody from 'react-bootstrap/CardBody';
 import { Link,} from 'react-router-dom';
-import { BsFileExcel } from "react-icons/bs";
+import { FiXSquare } from "react-icons/fi"
 
 
 const SecondPage = () => {
@@ -20,7 +20,7 @@ const SecondPage = () => {
             <Navbar expand="lg" className="bg-transparent">
             <Container>
               <Navbar.Brand href="#home">
-                <img alt="" src="https://hsa.hu/wp-content/uploads/2020/08/HSA_logo_wh-e1596540575453.png" style={{width:'150px',height:'56px',marginBottom: '20px',marginTop: '20px',marginRight: '20px'}}/>
+                <img alt="" src="https://hsa.hu/wp-content/uploads/2020/08/HSA_logo_wh-e1596540575453.png" style={{width:'150px',height:'56px',marginBottom: '1.25rem',marginTop: '1.25rem',marginLeft: '30%',marginRight:'0px'}}/>
                 </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav"/>
               <Navbar.Collapse id="basic-navbar-nav"style={{ margin: 'auto' }} >
@@ -48,9 +48,9 @@ const SecondPage = () => {
             </Container>
           </Navbar>
       <div className="flex-container">
-        <Row id='elso(egyetlen)sor' style={{ width: '80%',height:'80%'}}>
-            <Col sm={4}  id='elsofoszlop' style={{padding: 0}}>
-                <Col className="flex-item" sm={7} id='masodikoszlop(A)' style={{ width: '100%',height:'25em',padding: 0}}>
+        <Row id='elso(egyetlen)sor' style={{ width: '85%'}}>
+            <Col sm={4}  id='elsofoszlop' style={{}}>
+                <Col className="flex-item" sm={7}  style={{ width: '100%',height:'25em',marginRight:'5px'}}>
                   <Card  style={{backgroundImage:'url("https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',backgroundSize:'cover', position: 'relative', width: '100%', height: '100%',backgroundColor: '#00b26b',borderRadius: '0',/* marginBottom: '10px',*/}}>
                   <div
                 style={{
@@ -60,9 +60,9 @@ const SecondPage = () => {
                     <Card.Title className='cardtitle' style={{color:'white',fontWeight:'bold',textAlign:'center',zIndex:'1' }}>Állások</Card.Title> 
                   </Card>
                 </Col> 
-              <Col className="flex-item2" sm={7} id='masodikoszlop(AA)' style={{width: '25rem',height: '12.5rem',padding: 0}}>
-                <Form  inline style={{width: '100%',marginTop:'5px'}}>
-                  <InputGroup className='bg-transparent' style={{color:'white', borderRadius: '0', borderWidth:'2px',marginBottom: '10px'}}>
+              <Col className="flex-item" sm={7}  style={{width: '25rem',height: '12.5rem',}}>
+                <Form  inline style={{marginTop:'5px',}}>
+                  <InputGroup className='bg-transparent' style={{width: '100%',color:'white', borderRadius: '0', borderWidth:'2px',marginBottom: '10px'}}>
                       <InputGroup.Text className='bg-transparent' style={{ borderRight: 'none',borderRadius: '0',borderWidth: '2px',}}>
                           <BsListCheck size={24} color="white"/>
                       </InputGroup.Text>
@@ -79,14 +79,14 @@ const SecondPage = () => {
               </Col> 
             </Col>
 
-            <Col sm={6}  id='masodikfoszlop' style={{padding: 5}}>
-              <Col style={{ width: '100%',height:'100%'}}>
+            <Col sm={6}  id='masodikfoszlop' style={{}}>
+              <Col className="flex-item2" style={{ width: '100%',height:'98.5%',}}>
                 <Card style={{ width: '100%',height:'100%', backgroundColor: '#00b26b',borderRadius: '0',/*marginLeft: '5px',marginRight: '5px',marginTop:'5px'*/}}>
                 <Card.Title className='cardtitle' style={{position: 'absolute', top: '8%', left: '28%',  transform: 'translate(-50%, -50%)', color:'white',fontWeight:'bold'}}>Irodáink</Card.Title>
                       <CardBody style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between',placeItems: 'center' }}>
-                      <Card.Img className='img' variant="top" as={BiBuildings} style={{position: 'absolute', top: '8%', left: '10%',  transform: 'translate(-50%, -50%)', fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
+                      <Card.Img className='img' variant="top" as={BiBuildings} style={{position: 'absolute', top: '8%', left: '8%',  transform: 'translate(-50%, -50%)', fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
                       <Link to="/" style={{textDecoration:'none'}}>
-                      <Card.Img  className='img' variant="top" as={BsFileExcel} style={{position: 'absolute', top: '8%', left: '90%',  transform: 'translate(-50%, -50%)', fontSize:'60px',display: 'grid',placeItems: 'center',color:'white'}} />
+                      <Card.Img  className='img' variant="top" as={FiXSquare} style={{position: 'absolute', top: '8%', left: '93%',  transform: 'translate(-50%, -50%)', fontSize:'60px',display: 'grid',placeItems: 'center',color:'white'}} />
                       </Link>
                       <img style={{position: 'absolute', top: '18%',width:'95%',height:'50%'}} src='https://i.pinimg.com/originals/b8/19/c1/b819c1673909b8d6c63d68d9e5cf140b.gif' alt='HSA kep' />
                        <text style={{position: 'absolute', top: '70%',margin: '0 15px'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -100,20 +100,18 @@ const SecondPage = () => {
               </Col>
             </Col>
             
-            <Col sm={2} id='harmadikdikfoszlop' style={{padding: 0}}>
-                <Col className="flex-item3" sm={2} id='masodikoszlop(b)' style={{ width: '100%',height:'25rem',padding: 0}}>
+            <Col sm={2} id='harmadikdikfoszlop' style={{}}>
+                <Col className="flex-item3" sm={2}  style={{ width: '100%',height:'25rem',}}>
                   <Card className='bg-transparent'  style={{width: '100%', height: '100%',borderRadius: '0',border:'0px' /*margin: '5px'*/}}>
-                  <img alt="groupwork" style={{ width: '100%',height:'100%',zIndex:'0',}} src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                  <img alt="groupwork" style={{ width: '100%',height:'100%'}} src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
                   </Card>
                 </Col>
-                <Col className='flex-item4' style={{width: '100%',height:'12.5rem',padding: 0,textAlign:'center'}}>
-                  <CardGroup  style={{ display: 'flex', justifyContent: 'end', height:'100%'}}>
+                <Col className='flex-item3' style={{width: '100%',height:'12.5rem',textAlign:'center'}}>
                     <Card style={{width: '100%',height:'100%', backgroundColor: '#109E6A',borderRadius: '0', /*marginLeft: '5px',marginTop:'5px'*/}}>
                       <CardBody style={{float:'left', display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}></CardBody>
                       <Card.Img className='img' variant="top" as={BiSolidIdCard} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)', fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
                       <Card.Title className='cardtitle' style={{color:'white',fontWeight:'normal'}}>CV-generátor</Card.Title>
                     </Card>
-                  </CardGroup>
                 </Col>
             </Col>
        </Row>
