@@ -84,6 +84,11 @@ text{
   color: white;
   text-align: justify;
 }
+.hsamap{
+  position: absolute;
+  width:95%;
+  height:50%;
+}
 @media (max-width: 990px) {
   /* Ha a képernyő szélessége 768 pixelnél kisebb */
   .hide-on-small-screen {
@@ -117,10 +122,28 @@ text{
   .cardtitle{
     font-size: 20px !important;
   }
+  text{
+    font-size: 10px;
+    color: white;
+    text-align: justify;
+  }
+  .hsamap{
+    width:70%;
+    height:30%;
+  }
 }
 @media (max-width: 1200px) {
   .flex-item{
     width: 80% !important;
+  }
+  text{
+    font-size: 11px;
+    color: white;
+    text-align: justify;
+  }
+  .hsamap{
+    width:80%;
+    height:50%;
   }
   .flex-item2{
     width: 80% !important;
@@ -136,6 +159,9 @@ text{
   }
   .flex2{
     height: 80% !important;
+  }
+  .img{
+    font-size: 65px !important;
   }
 }
 /*https://images.unsplash.com/photo-1614279629245-d7a138f035f0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D*/

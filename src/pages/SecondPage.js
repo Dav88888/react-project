@@ -88,7 +88,7 @@ const SecondPage = () => {
                       <Link to="/" style={{textDecoration:'none'}}>
                       <Card.Img  className='img' variant="top" as={FiXSquare} style={{position: 'absolute', top: '8%', left: '93%',  transform: 'translate(-50%, -50%)', fontSize:'60px',display: 'grid',placeItems: 'center',color:'white'}} />
                       </Link>
-                      <img style={{position: 'absolute', top: '18%',width:'95%',height:'50%'}} src='https://i.pinimg.com/originals/b8/19/c1/b819c1673909b8d6c63d68d9e5cf140b.gif' alt='HSA kep' />
+                      <img className='hsamap' style={{ top: '18%',}} src='https://i.pinimg.com/originals/b8/19/c1/b819c1673909b8d6c63d68d9e5cf140b.gif' alt='HSA kep' />
                        <text style={{position: 'absolute', top: '70%',margin: '0 15px'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
