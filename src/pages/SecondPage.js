@@ -1,5 +1,5 @@
 // SecondPage.jsx
-import './App.css';
+import '../App.css';
 import React from 'react';
 import { Card, Container, CardGroup, Form, FormControl,Button, Row, Col, Navbar, Nav } from 'react-bootstrap';
 import InputGroup from 'react-bootstrap/InputGroup';
@@ -79,13 +79,22 @@ const SecondPage = () => {
               </Col> 
             </Col>
 
-            <Col sm={6}  id='masodikfoszlop' style={{padding: 0}}>
+            <Col sm={6}  id='masodikfoszlop' style={{padding: 5}}>
               <Col style={{ width: '100%',height:'100%'}}>
                 <Card style={{ width: '100%',height:'100%', backgroundColor: '#00b26b',borderRadius: '0',/*marginLeft: '5px',marginRight: '5px',marginTop:'5px'*/}}>
-                      <CardBody style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}>
-                      <Card.Img className='img' variant="top" as={BiBuildings} style={{position: 'absolute', top: '10%', left: '10%',  transform: 'translate(-50%, -50%)', fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
-                      <Card.Img className='img' variant="top" as={BsFileExcel} style={{position: 'absolute', top: '10%', left: '90%',  transform: 'translate(-50%, -50%)', fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
-                      <Card.Title className='cardtitle' style={{position: 'absolute', top: '10%', left: '22%',  transform: 'translate(-50%, -50%)', color:'white',fontWeight:'bold'}}>Irodáink</Card.Title>
+                <Card.Title className='cardtitle' style={{position: 'absolute', top: '8%', left: '28%',  transform: 'translate(-50%, -50%)', color:'white',fontWeight:'bold'}}>Irodáink</Card.Title>
+                      <CardBody style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between',placeItems: 'center' }}>
+                      <Card.Img className='img' variant="top" as={BiBuildings} style={{position: 'absolute', top: '8%', left: '10%',  transform: 'translate(-50%, -50%)', fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
+                      <Link to="/" style={{textDecoration:'none'}}>
+                      <Card.Img  className='img' variant="top" as={BsFileExcel} style={{position: 'absolute', top: '8%', left: '90%',  transform: 'translate(-50%, -50%)', fontSize:'60px',display: 'grid',placeItems: 'center',color:'white'}} />
+                      </Link>
+                      <img style={{position: 'absolute', top: '18%',width:'95%',height:'50%'}} src='https://i.pinimg.com/originals/b8/19/c1/b819c1673909b8d6c63d68d9e5cf140b.gif' alt='HSA kep' />
+                       <text style={{position: 'absolute', top: '70%',margin: '0 15px'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                       ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                       ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                       reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                       sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                       </text>
                       </CardBody>
                 </Card>
               </Col>
