@@ -1,0 +1,151 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+img{
+  width: 2000px;
+  height: 800px;
+}
+h5{
+  background-color: #1A1F37;
+  color: aliceblue;
+}
+input::placeholder{
+  color: white !important;
+}
+.navbar-toggler{
+  color: #05B26C !important;
+  background-color: #179069 !important;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+.flex-item {
+  flex: 1;
+  /*padding: 20px;*/
+  /*background-color: lightblue ;*/
+  margin: 5px;
+  width:100% ;
+  height: 100%;
+}
+
+.flex-item2 {
+  flex: 1;
+  /*padding: 20px;*/
+  /*background-color: rgb(195, 230, 173) ;*/
+  margin: 5px;
+  width:100% ;
+  height: 100%;
+}
+
+.flex-item3 {
+  flex: 1;
+  /*padding: 20px;*/
+  /*background-color: rgb(215, 206, 31) ;*/
+  margin: 5px;
+  width:100% ;
+  height: 100%;
+}
+.flex-item4 {
+  flex: 1;
+  /*padding: 20px;*/
+  /*background-color: rgb(234, 95, 15) ;*/
+  margin: 5px;
+  width:100% ;
+  height: 100%;
+}
+@media (max-width: 990px) {
+  /* Ha a képernyő szélessége 768 pixelnél kisebb */
+  .hide-on-small-screen {
+    display: none !important; /* A hide-on-small-screen osztályú elemeket elrejtjük */
+  }
+  .flex-item{
+    width: 50% !important;
+  }
+  .flex-item2{
+    width: 50% !important;
+  }
+  .flex-item3{
+    width: 50% !important;
+  }
+  .flex-item4{
+    width: 70% !important;
+  }
+  .flex1{
+    height: 50% !important;
+  }
+  .flex2{
+    height: 50% !important;
+  }
+  .flex3{
+    height: 90% !important;
+  }
+
+  .img{
+    font-size: 60px !important;
+  }
+  .cardtitle{
+    font-size: 20px !important;
+  }
+}
+/*@media (max-width: 1200px) {
+  .flex-item{
+    width: 80% !important;
+  }
+  .flex-item2{
+    width: 80% !important;
+  }
+  .flex-item3{
+    width: 80% !important;
+  }
+  .flex-item4{
+    width: 90% !important;
+  }
+  .flex1{
+    height: 80% !important;
+  }
+  .flex2{
+    /*height: 80% !important;
+  }
+}*/
+/*MdOutlineLocationCity /md irodaink*/
+/*ImProfile /im CV*/
+/*AiOutlineIdcard*/
+/*BiBuildings*/
+/*https://images.unsplash.com/photo-1562422313-5195a5f0198a?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D*/
+/*https://images.unsplash.com/photo-1633259584604-afdc243122ea?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D*/
+/*PiListChecksLight*/
+/*BsTextIndentLeft*/
+/*FaListCheck*/
+/*#179069-sotet zold*/
+/*#05B26C-vilagosabb zold*/
+/*#F5A32E-narancssarga*/
+/*#5EBE86-legvilagosabb zold*/
+/*#109E6A-legsotetebb zold*/
+/*color: #00b26b;-zold asszem*/
+
