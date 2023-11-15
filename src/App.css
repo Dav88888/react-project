@@ -10,19 +10,18 @@ input::placeholder{
   display: flex;
   justify-content: space-around;
 }
+#hsaimg{
+  position: relative;
+  left: 40px!important;
+}
 .flex-item {
   flex: 1;
-  /*padding: 20px;*/
-  /*background-color: lightblue ;*/
   margin: 5px;
   width:100% ;
   height: 100%;
 }
-
 .flex-item2 {
   flex: 1;
-  /*padding: 20px;*/
-  /*background-color: rgb(195, 230, 173) ;*/
   margin: 5px;
   width:100% ;
   height: 100%;
@@ -30,16 +29,12 @@ input::placeholder{
 
 .flex-item3 {
   flex: 1;
-  /*padding: 20px;*/
-  /*background-color: rgb(215, 206, 31) ;*/
   margin: 5px;
   width:100% ;
   height: 100%;
 }
 .flex-item4 {
   flex: 1;
-  /*padding: 20px;*/
-  /*background-color: rgb(234, 95, 15) ;*/
   margin: 5px;
   width:100% ;
   height: 100%;
@@ -67,7 +62,6 @@ body, html{
   box-sizing: border-box;
   padding-top: 100px !important; 
 }
-
 #elsoegyetlensor{
   height: 80% !important;
 }
@@ -84,12 +78,8 @@ body, html{
     height: 65px;
     margin-bottom: 20px;
 }
-.cardwithtext{
-
-}
 @media (max-width: 1300px) {
-  #harmadikdikfoszlop{
-  }
+
   #footer {
     margin-top: auto;
     overflow-x: 0;
@@ -97,7 +87,7 @@ body, html{
     height: 150px !important;
   }
   .hide-on-small-screen {
-    display: none !important; /* A hide-on-small-screen osztályú elemeket elrejtjük */
+    display: none !important; 
   }
   .flex2-item{
   flex: 1;
@@ -106,22 +96,18 @@ body, html{
   }
   .flex-item{
     flex: 1;
-  
       width: 50% !important;
     }
   .flex-item2{
   flex: 1;
-
     width: 50% !important;
   }
   .flex-item3{
   flex: 1;
-
     width: 50% !important;
   }
   .flex-item4{
   flex: 1;
-
     width: 70% !important;
   }
   .flex1{
@@ -133,7 +119,6 @@ body, html{
   .flex3{
     height: 90% !important;
   }
-
   .img{
     font-size: 60px !important;
   }
@@ -157,9 +142,6 @@ body, html{
     height:30%;
   }
 }
-
-
-
 @media (max-width: 1100px) {
   .flex-item{
     flex: 1;
@@ -177,26 +159,22 @@ body, html{
     height: 500px !important;
     width: 300px !important;
   }
-  
   .flex-item2{
   flex: 1;
-
     width: 80% !important;
     height: 80%;
   }
   .flex-item3{
   flex: 1;
-
     width: 80% !important;
   }
   .flex-item4{
     width: 90% !important;
   flex: 1;
-
   }
   .flex2-item{
     flex: 1;
-      width: 60% !important;
+      width: 40% !important;
       height: 60% !important;
       margin: 10px;
     }
@@ -208,27 +186,9 @@ body, html{
   }
   .img{
     font-size: 65px !important;
-
   }
   .img2{
     font-size: 65px !important;
     height: 9%;
-
   }
 }
-/*https://images.unsplash.com/photo-1614279629245-d7a138f035f0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D*/
-/*MdOutlineLocationCity /md irodaink*/
-/*ImProfile /im CV*/
-/*AiOutlineIdcard*/
-/*BiBuildings*/
-/*https://images.unsplash.com/photo-1562422313-5195a5f0198a?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D*/
-/*https://images.unsplash.com/photo-1633259584604-afdc243122ea?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D*/
-/*PiListChecksLight*/
-/*BsTextIndentLeft*/
-/*FaListCheck*/
-/*#179069-sotet zold*/
-/*#05B26C-vilagosabb zold*/
-/*#F5A32E-narancssarga*/
-/*#5EBE86-legvilagosabb zold*/
-/*#109E6A-legsotetebb zold*/
-/*color: #00b26b;-zold asszem*/

@@ -12,15 +12,14 @@ import CardBody from 'react-bootstrap/CardBody';
 import { Link,} from 'react-router-dom';
 import { FiXSquare } from "react-icons/fi"
 
-
 const SecondPage = () => {
   
   return (
-    <Container className='MainContainer' fluid style={{ backgroundImage: `url('https://images.unsplash.com/photo-1614279629245-d7a138f035f0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`, backgroundSize: 'cover',/*cover, auto, contain*/  backgroundPosition: 'center' }}>
+    <Container className='MainContainer' fluid style={{ backgroundImage: `url('https://images.unsplash.com/photo-1614279629245-d7a138f035f0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <Navbar expand="lg" className="bg-transparent" style={{ marginBottom: '20px' }}>
             <Container>
               <Navbar.Brand href="#home">
-                <img alt="" src="https://hsa.hu/wp-content/uploads/2020/08/HSA_logo_wh-e1596540575453.png" style={{width:'90%',height:'56px',marginBottom:'1rem'}}/>
+                <img id='hsaimg' alt="" src="https://hsa.hu/wp-content/uploads/2020/08/HSA_logo_wh-e1596540575453.png" style={{width:'90%',height:'56px',marginBottom:'1rem'}}/>
                 </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav"/>
               <Navbar.Collapse id="basic-navbar-nav"style={{ margin: 'auto' }} >
@@ -39,7 +38,7 @@ const SecondPage = () => {
                   <Nav.Link  className="hide-on-small-screen" style={{ color: 'white' }}>|</Nav.Link>
                   <Nav.Link as={Link} to="/" href="#kapcsolat" style={{ color: 'white' }}>Kapcsolat</Nav.Link>
                 </Nav>
-                <Nav style={{textAlign:'right'}}>
+                <Nav style={{textAlign:'right',position:'relative',right:'4%'}}>
                 <Nav.Link href="#HU" style={{ color: 'white',textAlign:'right' }}><strong>HU</strong></Nav.Link>
                   <Nav.Link  className="hide-on-small-screen" style={{ color: 'white',textAlign:'right' }}>|</Nav.Link> 
                   <Nav.Link href="#EN" style={{ color: 'white', textAlign:'right'}}>EN</Nav.Link>
@@ -51,7 +50,7 @@ const SecondPage = () => {
         <Row id='elsoegyetlensor'style={{width:'77.5rem',height:'38.438rem',backgroundPosition: 'center' }} >
             <Col md={4}  id='elsofoszlop' style={{}}>
                 <Col className="flex-item" md={7}  style={{ width: '25em',height:'25em',marginRight:'5px'}}>
-                  <Card  style={{backgroundImage:'url("https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',backgroundSize:'cover', position: 'relative', width: '100%', height: '100%',backgroundColor: '#00b26b',borderRadius: '0',/* marginBottom: '10px',*/}}>
+                  <Card  style={{backgroundImage:'url("https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',backgroundSize:'cover', position: 'relative', width: '100%', height: '100%',backgroundColor: '#00b26b',borderRadius: '0'}}>
                   <div
                 style={{
                   position: 'absolute', bottom: 0, left: 0, width: '100%', height: '25%',backgroundColor: 'rgba(40, 40, 40, 0.5)',zIndex:'0'}}
@@ -78,10 +77,9 @@ const SecondPage = () => {
                 </Form>
               </Col> 
             </Col>
-
             <Col md={6}  id='masodikfoszlop' style={{}}>
               <Col className="flex2-item" style={{ width: '100%',height:'98.5%',}}>
-                <Card className='cardwithtext' style={{ width: '100%',height:'100%', backgroundColor: '#00b26b',borderRadius: '0',/*marginLeft: '5px',marginRight: '5px',marginTop:'5px'*/}}>
+                <Card className='cardwithtext' style={{ width: '100%',height:'100%', backgroundColor: '#00b26b',borderRadius: '0'}}>
                 <Card.Title className='cardtitle' style={{position: 'absolute', top: '8%', left: '28%',  transform: 'translate(-50%, -50%)', color:'white',fontWeight:'bold'}}>Irodáink</Card.Title>
                       <CardBody style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between',placeItems: 'center' }}>
                       <Card.Img className='img2' variant="top" as={BiBuildings} style={{position: 'absolute', top: '8%', left: '8%',  transform: 'translate(-50%, -50%)', fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
@@ -101,15 +99,14 @@ const SecondPage = () => {
                 </Card>
               </Col>
             </Col>
-            
             <Col  id='harmadikdikfoszlop' style={{width: '12.5rem',height:'25rem',padding: 0, margin:'0px'}}>
                 <Col className="flex2-item" md={2}  style={{ width: '100%',height:'100%',}}>
-                  <Card className='bg-transparent'  style={{width: '100%', height: '100%',borderRadius: '0',border:'0px' /*margin: '5px'*/}}>
-                  <img alt="groupwork" style={{ width: '100%',height:'100%'}} src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                  <Card className='bg-transparent'  style={{width: '100%', height: '100%',borderRadius: '0',border:'0px' }}>
+                  <img   alt="groupwork" style={{ width: '100%',height:'100%'}} src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
                   </Card>
                 </Col>
                 <Col md={2} style={{width: '100%',height:'12.25rem',textAlign:'center',marginTop:'10px'}}>
-                    <Card className='flex2-item' style={{width: '100%',height:'100%', backgroundColor: '#109E6A',borderRadius: '0', /*marginLeft: '5px'*/}}>
+                    <Card className='flex2-item' style={{width: '100%',height:'100%', backgroundColor: '#109E6A',borderRadius: '0', }}>
                       <CardBody style={{float:'left', display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}></CardBody>
                       <Card.Img className='img' variant="top" as={BiSolidIdCard} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)', fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
                       <Card.Title className='cardtitle' style={{color:'white',fontWeight:'normal'}}>CV-generátor</Card.Title>
