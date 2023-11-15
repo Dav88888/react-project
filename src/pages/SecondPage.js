@@ -16,11 +16,11 @@ import { FiXSquare } from "react-icons/fi"
 const SecondPage = () => {
   
   return (
-    <Container className='MainContainer' fluid style={{ backgroundImage: `url('https://images.unsplash.com/photo-1614279629245-d7a138f035f0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`, backgroundSize: 'cover',/*cover, auto, contain*/  backgroundPosition: 'center', }}>
-            <Navbar expand="lg" className="bg-transparent">
+    <Container className='MainContainer' fluid style={{ backgroundImage: `url('https://images.unsplash.com/photo-1614279629245-d7a138f035f0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`, backgroundSize: 'cover',/*cover, auto, contain*/  backgroundPosition: 'center' }}>
+            <Navbar id="navbar" expand="lg" className="bg-transparent" style={{}}>
             <Container>
               <Navbar.Brand href="#home">
-                <img alt="" src="https://hsa.hu/wp-content/uploads/2020/08/HSA_logo_wh-e1596540575453.png" style={{width:'150px',height:'56px',marginBottom: '1.25rem',marginTop: '1.25rem',marginLeft: '30%',marginRight:'0px'}}/>
+                <img alt="" src="https://hsa.hu/wp-content/uploads/2020/08/HSA_logo_wh-e1596540575453.png" style={{width:'90%',height:'56px',marginBottom:'1rem'}}/>
                 </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav"/>
               <Navbar.Collapse id="basic-navbar-nav"style={{ margin: 'auto' }} >
@@ -48,9 +48,9 @@ const SecondPage = () => {
             </Container>
           </Navbar>
       <div className="flex-container">
-        <Row id='elso(egyetlen)sor'style={{width:'100%'}} >
+        <Row id='elsoegyetlensor'style={{width:'77.5rem',height:'38.438rem',backgroundPosition: 'center' }} >
             <Col sm={4}  id='elsofoszlop' style={{}}>
-                <Col className="flex-item" sm={7}  style={{ width: '100%',height:'25em',marginRight:'5px'}}>
+                <Col className="flex-item" sm={7}  style={{ width: '25em',height:'25em',marginRight:'5px'}}>
                   <Card  style={{backgroundImage:'url("https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',backgroundSize:'cover', position: 'relative', width: '100%', height: '100%',backgroundColor: '#00b26b',borderRadius: '0',/* marginBottom: '10px',*/}}>
                   <div
                 style={{
@@ -60,7 +60,7 @@ const SecondPage = () => {
                     <Card.Title className='cardtitle' style={{color:'white',fontWeight:'bold',textAlign:'center',zIndex:'1' }}>Állások</Card.Title> 
                   </Card>
                 </Col> 
-              <Col className="flex-item" sm={7}  style={{width: '25rem',height: '12.5rem',}}>
+              <Col className="flex-item" sm={7}  style={{width: '25rem',height: '12.5rem',padding: 0}}>
                 <Form  inline style={{marginTop:'5px',}}>
                   <InputGroup className='bg-transparent' style={{width: '100%',color:'white', borderRadius: '0', borderWidth:'2px',marginBottom: '10px'}}>
                       <InputGroup.Text className='bg-transparent' style={{ borderRight: 'none',borderRadius: '0',borderWidth: '2px',}}>
@@ -79,7 +79,7 @@ const SecondPage = () => {
               </Col> 
             </Col>
 
-            <Col sm={6}  id='masodikfoszlop' style={{}}>
+            <Col sm={6}  id='masodikfoszlop-flex-item2' style={{}}>
               <Col className="flex-item2" style={{ width: '100%',height:'98.5%',}}>
                 <Card style={{ width: '100%',height:'100%', backgroundColor: '#00b26b',borderRadius: '0',/*marginLeft: '5px',marginRight: '5px',marginTop:'5px'*/}}>
                 <Card.Title className='cardtitle' style={{position: 'absolute', top: '8%', left: '28%',  transform: 'translate(-50%, -50%)', color:'white',fontWeight:'bold'}}>Irodáink</Card.Title>
@@ -100,14 +100,14 @@ const SecondPage = () => {
               </Col>
             </Col>
             
-            <Col sm={2} id='harmadikdikfoszlop' style={{}}>
+            <Col sm={2} id='harmadikdikfoszlop' style={{width: '12.5rem',height:'25rem',padding: 0, margin:'0px'}}>
                 <Col className="flex-item3" sm={2}  style={{ width: '100%',height:'25rem',}}>
                   <Card className='bg-transparent'  style={{width: '100%', height: '100%',borderRadius: '0',border:'0px' /*margin: '5px'*/}}>
                   <img alt="groupwork" style={{ width: '100%',height:'100%'}} src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
                   </Card>
                 </Col>
-                <Col className='flex-item3' style={{width: '100%',height:'12.5rem',textAlign:'center'}}>
-                    <Card style={{width: '100%',height:'100%', backgroundColor: '#109E6A',borderRadius: '0', /*marginLeft: '5px',marginTop:'5px'*/}}>
+                <Col className='flex-item3' style={{width: '100%',height:'12.25rem',textAlign:'center',marginTop:'10px'}}>
+                    <Card style={{width: '100%',height:'100%', backgroundColor: '#109E6A',borderRadius: '0', /*marginLeft: '5px'*/}}>
                       <CardBody style={{float:'left', display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}></CardBody>
                       <Card.Img className='img' variant="top" as={BiSolidIdCard} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)', fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
                       <Card.Title className='cardtitle' style={{color:'white',fontWeight:'normal'}}>CV-generátor</Card.Title>
@@ -117,7 +117,7 @@ const SecondPage = () => {
        </Row>
        </div>
           
-          <footer>
+          <footer id = "footer">
             <Navbar bg="dark" variant="dark" expand="lg" className="bg-transparent" >
               <Nav className="w-100 justify-content-end" style={{backgroundcolor: '#1A1F37'}}> 
                 <Nav.Link href="#home" style={{ color: 'white' }}>© 2022 HSA Kft.  <AiOutlineInfoCircle size={24} style={{margin: '5px'}}/> </Nav.Link>

@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { Card, Container, CardGroup, Form, FormControl,Button, Row, Col, Navbar, Nav } from 'react-bootstrap';
+import { Card, Container, CardGroup, Form, FormControl,Button, Row, Col, Navbar, Nav, CardImg } from 'react-bootstrap';
 import InputGroup from 'react-bootstrap/InputGroup';
 import {BsGeoAlt } from 'react-icons/bs';
 import {BsListCheck } from 'react-icons/bs';
@@ -16,11 +16,11 @@ import { Link,} from 'react-router-dom';
 const MainPage = () => {
   
   return (
-    <Container className='MainContainer' fluid style={{ backgroundImage: `url('https://images.unsplash.com/photo-1614279629245-d7a138f035f0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`, backgroundSize: 'cover',/*cover, auto, contain initial */  backgroundPosition: 'center',width: '100%',height:'100%' }}>
-            <Navbar expand="lg" className="bg-transparent">
+    <Container className='MainContainer' fluid style={{ backgroundImage: `url('https://images.unsplash.com/photo-1614279629245-d7a138f035f0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`, backgroundSize: 'cover',/*cover, auto, contain initial */  backgroundPosition: 'center' }}>
+            <Navbar expand="lg" className="bg-transparent" style={{ marginBottom: '20px' }}>
             <Container>
               <Navbar.Brand href="#home">
-                <img alt="" src="https://hsa.hu/wp-content/uploads/2020/08/HSA_logo_wh-e1596540575453.png" style={{width:'150px',height:'56px',marginBottom: '1.25rem',marginTop: '1.25rem',marginLeft: '30%',marginRight:'0px'}}/>
+                <img alt="" src="https://hsa.hu/wp-content/uploads/2020/08/HSA_logo_wh-e1596540575453.png" style={{width:'90%',height:'56px',marginBottom:'1rem'}}/>
                 </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav"/>
               <Navbar.Collapse id="basic-navbar-nav"style={{ margin: 'auto' }} >
@@ -48,25 +48,25 @@ const MainPage = () => {
             </Container>
           </Navbar>
           <div className="flex-container">
-          <Row id='elso(egyetlen)sor' >
-            <Col sm={6}  id='elsofoszlop' style={{margin:'0px'}}>
+          <Row id='elsoegyetlensor' style={{width:'77.5rem',height:'38.438rem',backgroundPosition: 'center' }} >
+            <Col sm={6}  id='elsofoszlop' style={{}}>
               <Row sm={8}  id='masodiksor(A)' style={{marginBottom:'1px',marginTop:'1px'}}>
-                <Col className="flex-item" sm={7} id='masodikoszlop(A)' style={{ width: '25em',height:'25em',padding: 0}}>
-                  <Card  style={{backgroundImage:'url("https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',backgroundSize:'cover', position: 'relative', width: '100%', height: '100%',backgroundColor: '#00b26b',borderRadius: '0',/* marginBottom: '10px',*/}}>
-                  <div
-                style={{
-                  position: 'absolute', bottom: 0, left: 0, width: '100%', height: '25%',backgroundColor: 'rgba(40, 40, 40, 0.5)',zIndex:'0'}}
-              ></div>
-                  <CardBody className="text-center"style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}></CardBody>
-                    <Card.Title className='cardtitle' style={{color:'white',fontWeight:'bold',textAlign:'center',zIndex:'1' }}>Állások</Card.Title> 
-                  </Card>
-                </Col>
-                <Col className="flex-item" sm={2} id='masodikoszlop(B)' style={{ width: '12.5rem',height:'25rem',padding: 0}}>
-                  <Card  className='flex1' style={{width: '100%', height: '100%', backgroundColor: '#F5A32E',borderRadius: '0', /*marginBottom: '10px'*/}}>
-                  <CardBody className="text-center"style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}></CardBody>
-                  <Card.Img className='img' variant="top" as={FaUserGraduate} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)',fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
-                    <Card.Title  className='cardtitle' style={{ textAlign: 'center',color:'white',fontWeight:'normal'}}>Diplomásoknak</Card.Title>
-                    
+                  <Col className="flex-item" sm={7} id='masodikoszlop(A)' style={{ width: '25em',height:'25em',padding: 0}}>
+                    <Card  style={{backgroundImage:'url("https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',backgroundSize:'cover', position: 'relative', width: '100%', height: '100%',backgroundColor: '#00b26b',borderRadius: '0',/* marginBottom: '10px',*/}}>
+                    <div
+                  style={{
+                    position: 'absolute', bottom: 0, left: 0, width: '100%', height: '25%',backgroundColor: 'rgba(40, 40, 40, 0.5)',zIndex:'0'}}
+                ></div>
+                    <CardBody className="text-center"style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}></CardBody>
+                      <Card.Title className='cardtitle' style={{color:'white',fontWeight:'bold',textAlign:'center',zIndex:'1' }}>Állások</Card.Title> 
+                    </Card>
+                  </Col>
+                  <Col className="flex-item" sm={2} id='masodikoszlop(B)' style={{ width: '12.5rem',height:'25rem',padding: 0}}>
+                    <Card  className='flex1' style={{width: '100%', height: '100%', backgroundColor: '#F5A32E',borderRadius: '0', /*marginBottom: '10px'*/}}>
+                    <CardBody className="text-center"style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between' }}></CardBody>
+                    <Card.Img className='img' variant="top" as={FaUserGraduate} style={{position: 'absolute', top: '50%', left: '50%',  transform: 'translate(-50%, -50%)',fontSize:'80px',display: 'grid',placeItems: 'center',color:'white'}} />
+                      <Card.Title  className='cardtitle' style={{ textAlign: 'center',color:'white',fontWeight:'normal'}}>Diplomásoknak</Card.Title>
+                      
                   </Card>
                 </Col>
               </Row>
@@ -88,9 +88,9 @@ const MainPage = () => {
                   <Button variant="outline-success" style={{fontWeight: 'bold',width: '150px',color:'white', borderRadius: '0', borderWidth:'0px',backgroundColor:'#00b26b',marginTop: '10px', }}>Keresés</Button>
                 </Form>
               </Col>
-                <Col className="flex-item(2)" sm={2} id='masodikoszlop(BB)' style={{ width: '12.5rem',height:'12.5rem'}}>
-                  <Card  className='bg-transparent' style={{width:'100%',height:'100%',borderRadius: '0', marginTop:'5px', marginBottom: '5px'}}>
-                <img style={{ width: '100%',height:'100%'}} alt="workinggirl" src="https://images.unsplash.com/photo-1571365689578-618663443bd7?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                <Col className="flex-item(2)" sm={2} id='masodikoszlop(BB)' style={{ width: '13rem',height:'12.5rem',marginTop:'5px', marginBottom: '5px'}}>
+                  <Card  className='bg-transparent' style={{borderRadius: '0',placeItems: 'center' }}>
+                    <CardImg style={{height:'12.5rem',width:'12.5rem'}} src='https://images.unsplash.com/photo-1571365689578-618663443bd7?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'/>
                   </Card>
                 </Col>
             </Row>      
@@ -109,7 +109,7 @@ const MainPage = () => {
                     </CardBody>
                   </Card>
                 </Col>
-                <Col className="flex-item3 flex2" sm={2} id='masodikoszlop(b)' style={{ width: '12.5rem',height:'25rem',padding: 0}}>
+                <Col className="flex-item3 flex2" sm={2} id='masodikoszlop(b)' style={{ width: '12rem',height:'25rem',padding: 0}}>
                   <Card className='bg-transparent'  style={{width: '100%', height: '100%',borderRadius: '0',border:'0px' /*margin: '5px'*/}}>
                   <img alt="groupwork" style={{ width: '100%',height:'100%',}} src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
                   </Card>
@@ -145,7 +145,7 @@ const MainPage = () => {
             </Col>
           </Row>
           </div>
-          <footer>
+          <footer id = "footer">
             <Navbar bg="dark" variant="dark" expand="lg" className="bg-transparent" >
               <Nav className="w-100 justify-content-end" style={{backgroundcolor: '#1A1F37'}}> 
                 <Nav.Link href="#home" style={{ color: 'white' }}>© 2022 HSA Kft.  <AiOutlineInfoCircle size={24} style={{margin: '5px'}}/> </Nav.Link>

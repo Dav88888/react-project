@@ -94,20 +94,43 @@ text{
 }
 body, html{
   margin: 0;
+  padding: 0;
+  width: 100%;
   height: 100%;
 }
 .MainContainer {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  box-sizing: border-box;
+  padding-top: 80px !important; 
 }
-footer {
+
+#elsoegyetlensor{
+  height: 80% !important;
+}
+#footer {
   margin-top: auto;
+  overflow-x: 0;
+  height: 80px !important;
+}
+* {
+  box-sizing: border-box;
+}
+#navbar{
+    margin-top: 0% !important;
+    height: 65px;
+    margin-bottom: 20px;
 }
 
-
-@media (max-width: 990px) {
+@media (max-width: 1300px) {
   /* Ha a képernyő szélessége 768 pixelnél kisebb */
+  #footer {
+    margin-top: auto;
+    overflow-x: 0;
+    font-size: 13px;
+    height: 150px !important;
+  }
   .hide-on-small-screen {
     display: none !important; /* A hide-on-small-screen osztályú elemeket elrejtjük */
   }
