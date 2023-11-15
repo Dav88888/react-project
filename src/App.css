@@ -12,7 +12,10 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+* {
+  margin: 0;
+  padding: 0;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -89,6 +92,18 @@ text{
   width:95%;
   height:50%;
 }
+body, html{
+  margin: 0;
+  height: 100%;
+}
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+
 @media (max-width: 990px) {
   /* Ha a képernyő szélessége 768 pixelnél kisebb */
   .hide-on-small-screen {
