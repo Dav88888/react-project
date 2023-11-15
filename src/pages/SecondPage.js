@@ -48,7 +48,7 @@ const SecondPage = () => {
             </Container>
           </Navbar>
       <div className="flex-container">
-        <Row id='elso(egyetlen)sor' style={{ width: '85%'}}>
+        <Row id='elso(egyetlen)sor'style={{width:'100%'}} >
             <Col sm={4}  id='elsofoszlop' style={{}}>
                 <Col className="flex-item" sm={7}  style={{ width: '100%',height:'25em',marginRight:'5px'}}>
                   <Card  style={{backgroundImage:'url("https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',backgroundSize:'cover', position: 'relative', width: '100%', height: '100%',backgroundColor: '#00b26b',borderRadius: '0',/* marginBottom: '10px',*/}}>

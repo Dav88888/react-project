@@ -48,8 +48,8 @@ const MainPage = () => {
             </Container>
           </Navbar>
           <div className="flex-container">
-          <Row id='elso(egyetlen)sor'>
-            <Col sm={6}  id='elsofoszlop'>
+          <Row id='elso(egyetlen)sor' >
+            <Col sm={6}  id='elsofoszlop' style={{margin:'0px'}}>
               <Row sm={8}  id='masodiksor(A)' style={{marginBottom:'1px',marginTop:'1px'}}>
                 <Col className="flex-item" sm={7} id='masodikoszlop(A)' style={{ width: '25em',height:'25em',padding: 0}}>
                   <Card  style={{backgroundImage:'url("https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',backgroundSize:'cover', position: 'relative', width: '100%', height: '100%',backgroundColor: '#00b26b',borderRadius: '0',/* marginBottom: '10px',*/}}>
@@ -96,7 +96,7 @@ const MainPage = () => {
             </Row>      
             </Col>
             <Col sm={6} id='masodikfoszlop'>
-              <Row sm={8} id='masodiksor(a)' style={{marginBottom:'1px',marginTop:'1px'}}>
+              <Row sm={8} id='masodiksor(a)' style={{marginBottom:'1px',marginTop:'1px',}}>
                 <Col className="flex-item3" sm={7} id='masodikoszlop(a)' style={{ width: '25rem',height:'25rem',padding: 0}}>
                   <Card style={{width: '99%', height: '49%',backgroundColor: '#5EBE86',borderRadius: '0', marginBottom: '10px'}}>
                   <CardBody style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'space-between'  }}></CardBody>
@@ -115,7 +115,7 @@ const MainPage = () => {
                   </Card>
                 </Col>
               </Row>
-              <Row sm={4} id='masodiksor(b)' style={{textAlign:'center',height:'12.5rem',marginBottom:'1px',marginTop:'1px'}} >
+              <Row sm={4} id='masodiksor(b)' style={{textAlign:'center',height:'12.5rem',marginBottom:'1px',marginTop:'1px',}} >
                 <Col className='flex-item4' style={{width: '37.5rem',padding: 0}}>
                   <CardGroup  style={{ display: 'flex', justifyContent: 'end', height:'100%'}}>
                     

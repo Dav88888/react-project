@@ -101,7 +101,9 @@ body, html{
   flex-direction: column;
   min-height: 100vh;
 }
-
+footer {
+  margin-top: auto;
+}
 
 
 @media (max-width: 990px) {
