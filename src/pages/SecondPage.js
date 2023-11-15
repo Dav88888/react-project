@@ -17,7 +17,7 @@ const SecondPage = () => {
   
   return (
     <Container className='MainContainer' fluid style={{ backgroundImage: `url('https://images.unsplash.com/photo-1614279629245-d7a138f035f0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`, backgroundSize: 'cover',/*cover, auto, contain*/  backgroundPosition: 'center' }}>
-            <Navbar id="navbar" expand="lg" className="bg-transparent" style={{}}>
+            <Navbar expand="lg" className="bg-transparent" style={{ marginBottom: '20px' }}>
             <Container>
               <Navbar.Brand href="#home">
                 <img alt="" src="https://hsa.hu/wp-content/uploads/2020/08/HSA_logo_wh-e1596540575453.png" style={{width:'90%',height:'56px',marginBottom:'1rem'}}/>
@@ -61,7 +61,7 @@ const SecondPage = () => {
                   </Card>
                 </Col> 
               <Col className="flex-item" sm={7}  style={{width: '25rem',height: '12.5rem',padding: 0}}>
-                <Form  inline style={{marginTop:'5px',}}>
+                <Form  inline style={{marginTop:'10px',}}>
                   <InputGroup className='bg-transparent' style={{width: '100%',color:'white', borderRadius: '0', borderWidth:'2px',marginBottom: '10px'}}>
                       <InputGroup.Text className='bg-transparent' style={{ borderRight: 'none',borderRadius: '0',borderWidth: '2px',}}>
                           <BsListCheck size={24} color="white"/>
@@ -116,8 +116,7 @@ const SecondPage = () => {
             </Col>
        </Row>
        </div>
-          
-          <footer id = "footer">
+       <footer id = "footer">
             <Navbar bg="dark" variant="dark" expand="lg" className="bg-transparent" >
               <Nav className="w-100 justify-content-end" style={{backgroundcolor: '#1A1F37'}}> 
                 <Nav.Link href="#home" style={{ color: 'white' }}>© 2022 HSA Kft.  <AiOutlineInfoCircle size={24} style={{margin: '5px'}}/> </Nav.Link>
@@ -128,7 +127,6 @@ const SecondPage = () => {
               </Nav>
             </Navbar>
           </footer>
-      
     </Container>
   );
 }

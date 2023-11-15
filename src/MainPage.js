@@ -90,7 +90,7 @@ const MainPage = () => {
               </Col>
                 <Col className="flex-item(2)" sm={2} id='masodikoszlop(BB)' style={{ width: '13rem',height:'12.5rem',marginTop:'5px', marginBottom: '5px'}}>
                   <Card  className='bg-transparent' style={{borderRadius: '0',placeItems: 'center' }}>
-                    <CardImg style={{height:'12.5rem',width:'12.5rem'}} src='https://images.unsplash.com/photo-1571365689578-618663443bd7?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'/>
+                    <CardImg style={{height:'12.5rem',width:'12.5rem', borderRadius: '0' }} src='https://images.unsplash.com/photo-1571365689578-618663443bd7?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'/>
                   </Card>
                 </Col>
             </Row>      
